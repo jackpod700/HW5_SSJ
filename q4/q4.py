@@ -22,33 +22,33 @@ def main():
     line4ln=""
     for row in data:
         if((row[1])[0]=="1"):
-            if(line1b<int(row[-3])):
+            if(line1b<int(row[-3])+int(row[-2])):
                 line1bn=row[3]
-                line1b=int(row[-3])
-            if(line1l>int(row[-3])):
+                line1b=int(row[-3])+int(row[-2])
+            if(line1l>int(row[-3])+int(row[-2])):
                 line1ln=row[3]
-                line1l=int(row[-3])
+                line1l=int(row[-3])+int(row[-2])
         elif((row[1])[0]=="2"):
-            if(line2b<int(row[-3])):
+            if(line2b<int(row[-3])+int(row[-2])):
                 line2bn=row[3]
-                line2b=int(row[-3])
-            if(line2l>int(row[-3])):
+                line2b=int(row[-3])+int(row[-2])
+            if(line2l>int(row[-3])+int(row[-2])):
                 line2ln=row[3]
-                line2l=int(row[-3])
+                line2l=int(row[-3])+int(row[-2])
         elif((row[1])[0]=="3"):
-            if(line3b<int(row[-3])):
+            if(line3b<int(row[-3])+int(row[-2])):
                 line3bn=row[3]
-                line3b=int(row[-3])
-            if(line3l>int(row[-3])):
+                line3b=int(row[-3])+int(row[-2])
+            if(line3l>int(row[-3])+int(row[-2])):
                 line3ln=row[3]
-                line3l=int(row[-3])
+                line3l=int(row[-3])+int(row[-2])
         elif((row[1])[0]=="4"):
-            if(line4b<int(row[-3])):
+            if(line4b<int(row[-3])+int(row[-2])):
                 line4bn=row[3]
-                line4b=int(row[-3])
-            if(line4l>int(row[-3])):
+                line4b=int(row[-3])+int(row[-2])
+            if(line4l>int(row[-3])+int(row[-2])):
                 line4ln=row[3]
-                line4l=int(row[-3])
+                line4l=int(row[-3])+int(row[-2])
     
     print("***Subway Report for Seoul on March 2023***")
     print("Line ",1)

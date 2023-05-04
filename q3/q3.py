@@ -17,7 +17,7 @@ def main():
     for row in data:
         if(not((row[1])[0] in ["1","2","3","4","5","6","7","8","9"])):
             continue
-        total[int((row[1])[0])-1] += int(row[-3])
+        total[int((row[1])[0])-1] += int(row[-3])+int(row[-2])
     total2=total.copy()
     
     maximum1=max(total)
