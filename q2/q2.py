@@ -1,6 +1,6 @@
 import csv
 def main():
-    f=open('2022_Seoul_Temp.csv','r',encoding='ANSI')
+    f=open('q2.csv','r',encoding='ANSI')
     data=csv.reader(f)
     header=next(data)
     minimumday=""

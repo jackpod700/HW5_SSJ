@@ -1,6 +1,6 @@
 import csv
 def main():
-    f=open('202303_Seoul_Subway.csv','r',encoding='ANSI')
+    f=open('q3.csv','r',encoding='ANSI')
     data=csv.reader(f)
     header=next(data)
     total=[0,0,0,0,0,0,0,0,0]

@@ -1,6 +1,6 @@
 import csv
 def main():
-    f=open('202303_Seoul_Subway.csv','r',encoding='ANSI')
+    f=open('q4.csv','r',encoding='ANSI')
     data=csv.reader(f)
     header=next(data)
     
